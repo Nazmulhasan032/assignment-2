@@ -1,0 +1,60 @@
+body{
+    margin: 0;
+    font-family: tahoma;
+ 
+}
+.header-area{
+    background-color: #f5ecd9;
+}
+.container{
+    width: 80%;
+    margin:auto;
+
+}
+/*------------ header-top area start -----------*/
+.header-top{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.menu{
+    display:flex;
+    
+}
+.menu a{
+    text-decoration: none;
+    margin-left: 30px;
+    color:black;
+    font-weight: bold;
+    font-size: 14px;
+}
+/* -----header-top end--------- */
+/* -------header-middle area start -------*/
+.header-middle{
+    text-align:center;
+    margin-top: 60px;
+}
+.header-middle p{
+    color:gray;
+    font-size: 12px;
+    word-spacing: 2px;
+
+}
+.header-middle button{
+    background-color: #f39c12;
+    border:none;
+    height:44px;
+    width: 130px;
+    border-radius: 6px;
+    color:white;
+    margin: 30px 0;
+
+}
+/* header-middle area end */
+/* header-bottom area start */
+.header-bottom img{
+    width:100%;
+    margin-bottom: 40px;
+}
+/* header-bottom area end */
+
