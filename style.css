@@ -149,6 +149,7 @@ p{
 .info h5{
     margin-bottom:0;
 }
+
 /* --------section-2 end -----------*/
 /* --------section-3 start -----------*/
 .section-3{
@@ -180,6 +181,8 @@ p{
 .box h2{
     margin:0;
 }
+/* section-3 end */
+
 /* section-4 start */
 .section-4{
     margin-bottom: 100px;
@@ -203,6 +206,7 @@ p{
 .icon .black{
     filter: brightness(0);;
 }
+
 /* ----------section-5 start here---------- */
 .personal .content{
 	display: flex;
@@ -223,11 +227,12 @@ p{
 	padding: 12px 12px;
 
 }
-.personal-right table {
+.personal-right table{
 	border: 1px solid black;
 	border-collapse: collapse;
 }
 /* section-5 end */
+
 /* footer-part */
 .footer-area{
     margin-bottom:100px;
@@ -242,4 +247,121 @@ p{
     text-align: center;
     padding-top: 18px;
 }
+/* --------------------------------media query start from here ----------------------------------------*/
 
+@media screen and (max-width:576px){
+    .header-area .container{
+        width:90%;
+        margin:auto;
+    }
+    .header-area{
+        margin:auto;
+    }
+    .header-top{
+        flex-direction: column;
+        align-items: center;
+    }
+    .menu{
+        flex-direction: column;
+        
+    }
+    .menu a{
+       margin:auto;
+    }
+
+    /* section-1 responsive start*/
+        .section-1{
+            flex-direction: column;
+        }
+        .section-1 .left-side{
+            grid-template-columns: 1fr;
+        }
+    /* section-1 responsive end */
+    /* section-2 responsive start */
+    .section-2{
+        flex-direction: column;
+    }
+    .section-2 .left{
+        width:80%;
+    }
+    .section-2 .right{
+        width:80%;
+        margin-top: 30px;
+        position:none;
+    }
+    .section-2 .right .btn{
+        position:none;
+        left: 0;
+        bottom:0;
+        top:100%;
+    }
+    /* section-2 responsive end */
+    /* section-3 responsive start */
+
+    .section-3 .reward .box{
+        width:80%;
+        text-align: center;
+    }
+    .section-3 .fact h2,p{
+        text-align: center;
+    }
+    .section-3 .fact h2{
+        margin-top:150px;
+    }
+    .reward{
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+    }
+    /* section-3 responsive end */
+    /* section-4 responsive start */
+    .section-4 .icon{
+        grid-template-columns: 1fr;
+    }
+    .section-4 .sponsor h2{
+        margin-top:200px;
+    }
+    .section-4 .icon img{
+        width:40%;
+        margin:auto;
+        margin-top: 20px;
+    }
+    /* section-4 responsive end */
+    /* section-5 responsive start */
+    .personal .content{
+        flex-direction:column;
+     
+    }
+    .personal-left{
+        margin: 0;
+    
+    }
+    .personal-right{
+        margin-top: 0px;
+    }
+    .personal-right h2{
+        text-align:center;
+    }
+    .personal-left img{
+        height: 400px;
+        width: 300px;
+    }
+    .personal-right table td, th{
+        border: 1px solid black;
+        padding: 12px 12px;
+    
+    }
+    .personal-right table{
+        width:100px;
+        height:400px%
+        margin:auto;
+    }
+    
+
+    
+    /* section-5 responsive end */
+    .last-part{
+        width: 100%;
+     
+    }
+       
+    }
